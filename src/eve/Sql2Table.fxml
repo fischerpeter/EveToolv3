@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-Infinity" prefHeight="184.0" prefWidth="310.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eve.Sql2TableController">
+  <children>
+    <BorderPane prefHeight="184.0" prefWidth="310.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <Label fx:id="entrieslabel" prefWidth="300.0" text="0 entries">
+          <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+          </BorderPane.margin>
+        </Label>
+      </bottom>
+      <center>
+        <TableView fx:id="generalTable" prefHeight="111.0" prefWidth="290.0" />
+      </center>
+      <top>
+        <Group id="Group">
+          <children>
+            <Label layoutX="0.0" layoutY="0.0" text="Output">
+              <font>
+                <Font size="20.0" />
+              </font>
+            </Label>
+            <AnchorPane id="AnchorPane" layoutX="100.0" layoutY="5.0" prefWidth="190.0">
+              <children>
+                <TextField fx:id="searchBox" alignment="CENTER_LEFT" prefWidth="190.0" promptText="enter search string" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+            </AnchorPane>
+          </children>
+          <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </BorderPane.margin>
+        </Group>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
